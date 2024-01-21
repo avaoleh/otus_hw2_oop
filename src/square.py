@@ -21,6 +21,14 @@ class Square(Figure):
         """Setter for attribute __side_a"""
         self.__side_a = value
 
+    def get_area(self):
+        """method get_area"""
+        return self.__side_a * self.__side_a
+
+    def get_perimeter(self):
+        """method get_perimeter"""
+        return 4 * self.__side_a
+
     def __str__(self):
         """Метод описания (description)"""
         return f"Square with side: {self.side_a}"
